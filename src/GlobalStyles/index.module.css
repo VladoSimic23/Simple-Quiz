@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: 200px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 19px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.quizWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  background: #2828b5;
+  border: none;
+  padding: 8px 30px;
+  color: white;
+  cursor: pointer;
+  margin: 50px 20px;
+}
+
+.textGreen {
+  color: green;
+  font-weight: bold;
+}
+
+.textRed {
+  color: red;
+  font-weight: bold;
+}
+
+.questionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  min-width: 700px;
+  margin: 80px auto 0 auto;
+  padding: 15px;
+}
+
+.questionContainer .questionText h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.questionContainer .answersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 500px;
+}
+
+.questionContainer .answersContainer span {
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.questionContainer .answersContainer .answerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.questionContainer .answersContainer .answerContainer input[type="checkbox"] {
+  margin-right: 10px;
+  max-width: 22px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.questionContainer .answersContainer .answerContainer label {
+  font-size: 20px;
+}
+
+.questionContainer .questionImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.questionContainer .answersGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .questionContainer .answersContainer {
+    min-width: auto;
+  }
+  .questionContainer .answersGrid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    min-width: 250px;
+  }
+  .questionContainer .answersGrid .questionImage {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .questionContainer {
+    min-width: auto !important;
+  }
+}
+
+.quizResultsContainer {
+  margin-top: 80px;
+}
+
+.quizResultsContainer div h2 {
+  text-align: center;
+}
+
+.wrongAnswersContainer {
+  padding: 30px;
+}
+
+.wrongAnswersContainer h3 {
+  margin: 10px 0;
+}
+
+.wrongAnswersContainer p {
+  font-size: 16px;
+}
+
+.wrongAnswersContainer div {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .btn {
+    margin-top: 0 !important;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */
