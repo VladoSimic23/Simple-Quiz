@@ -30,6 +30,26 @@ h3 {
 p {
   font-size: 19px;
 }
+.Intro {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px;
+}
+
+.Intro h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Intro h3 {
+  margin: 30px 0;
+}
+
+.Intro button {
+  margin-top: 50px !important;
+}
 
 .container {
   max-width: 1200px;
