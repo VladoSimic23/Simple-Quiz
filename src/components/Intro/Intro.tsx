@@ -12,7 +12,8 @@ const Intro: React.FC<IntroI> = ({ setIntro }) => {
       <p>
         Test sadrži 40 pitanja, te za uspješno polaganje testa potrebno je
         minimalno 108 od 120 mogućih bodova. Na kraju testa bit će izlistana
-        pitanja na koja ste pogrešno odgovorili ako takvih bude.
+        pitanja na koja ste pogrešno odgovorili ako takvih bude. Svako pitanje
+        može imati 1 ili više točnih odgovora.
       </p>
       <h3>Sistem Bodovanja: </h3>
       <ul>
