@@ -4,6 +4,7 @@ import QuizQuestion from "../QuizQuestions/QuizQuestions";
 import QuizControls from "../QuizControls/QuizControls";
 import styles from "../../GlobalStyles/index.module.css";
 import useFirebaseData from "../useFirebaseData";
+import Intro from "../Intro/Intro";
 
 // interface for QuizData to define the type of data we expect
 export interface QuizData {
