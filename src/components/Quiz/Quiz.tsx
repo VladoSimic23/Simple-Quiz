@@ -23,6 +23,7 @@ const Quiz: React.FC = () => {
     [key: number]: boolean;
   }>({});
   const [score, setScore] = useState(0);
+    const [intro, setIntro] = useState(true);
   const [quizFinished, setQuizFinished] = useState(false);
   const [answeredQuestions, setAnsweredQuestions] = useState<number[]>([]);
   const { firebaseData, firebaseError, firebaseLoading } = useFirebaseData();
@@ -85,6 +86,10 @@ const Quiz: React.FC = () => {
     return <h1>{firebaseError}</h1>;
   }
 
+  if (intro) {
+    return <Intro setIntro={setIntro} />;
+  }
+  
   return (
     <div className={styles.quizWrap}>
       {/*if quiz is finished renders a Quiz Results component*/}
