@@ -38,7 +38,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
               <span>{answer.id}.</span>
               <input
                 type="checkbox"
-                checked={selectedAnswers[answer.id]}
+                checked={selectedAnswers[answer.id] ?? false}
                 onChange={() => handleAnswerSelection(answer.id)}
               />
               <p>{answer.odgovor}</p>
