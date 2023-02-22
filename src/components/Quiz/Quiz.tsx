@@ -75,6 +75,7 @@ const Quiz: React.FC = () => {
       ]);
     }
 
+      
     // if the last question has been answered, set quizFinished to true, otherwise move to the next question
     if (currentQuestion === firebaseData.length - 1) {
       setQuizFinished(true);
