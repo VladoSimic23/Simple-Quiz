@@ -15,3 +15,15 @@ SCSS (Sassy CSS) is a preprocessor scripting language that extends the functiona
 
 ## Firebase
 Firebase is a cloud-based mobile and web application development platform that provides a suite of tools and services for building and managing applications. It offers features such as real-time database, authentication, hosting, cloud storage, messaging, and analytics. With Firebase, developers can easily build, deploy and scale their applications without the need for managing servers or infrastructure. It is a popular choice for building web and mobile applications due to its ease of use, real-time data synchronization, and robust set of features. Firebase is owned by Google and can be integrated with other Google services to create powerful, feature-rich applications.
+
+
+### To clone a repository from GitHub, follow these steps:
+
+    1.Copy the HTTPS or SSH link to the repository.
+    2.Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+    3.Type "git clone" followed by the repository link you copied in step 2 and press enter.
+    4.Wait for the repository to download and you're done! You should now have a local copy of the repository on your machine.
+
+npm run build - to build
+
+npm start - to start the server
