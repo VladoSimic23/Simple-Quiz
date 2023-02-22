@@ -36,9 +36,11 @@ const Quiz: React.FC = () => {
     });
   };
 
-  const handleNextQuestion = () => {
+    const handleNextQuestion = () => {
     const currentQuestionData = firebaseData[currentQuestion];
     let selectedCorrectAnswers = 0;
+    let allSelectedAnswersCorrect = true;
+
     // Loop through selected answers
     for (const answerId in selectedAnswers) {
       // Check if selected answer is correct
@@ -53,11 +55,14 @@ const Quiz: React.FC = () => {
       ) {
         // Increment the count of selected correct answers
         selectedCorrectAnswers++;
+      } else {
+        allSelectedAnswersCorrect = false;
       }
     }
 
-    // check if the correct answers have been selected and update score if necessary
+    // check if all selected answers are correct and update score if necessary
     if (
+      allSelectedAnswersCorrect &&
       selectedCorrectAnswers ===
         currentQuestionData.točniOdgovori.filter((answer) => answer.točan)
           .length &&
@@ -69,6 +74,7 @@ const Quiz: React.FC = () => {
         currentQuestion,
       ]);
     }
+
     // if the last question has been answered, set quizFinished to true, otherwise move to the next question
     if (currentQuestion === firebaseData.length - 1) {
       setQuizFinished(true);
