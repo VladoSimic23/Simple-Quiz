@@ -12,3 +12,6 @@ TypeScript is a superset of JavaScript that adds optional static type checking a
 
 ## SCSS
 SCSS (Sassy CSS) is a preprocessor scripting language that extends the functionality of CSS. It allows developers to write CSS in a more maintainable and modular way by adding variables, nesting, mixins, and functions. With SCSS, you can write cleaner, more readable code, and easily reuse and share styles across your application. It also provides additional features such as math functions, loops, and conditional statements, which make it easier to create complex and responsive layouts. SCSS files must be compiled to CSS before they can be used in a web application.
+
+## Firebase
+Firebase is a cloud-based mobile and web application development platform that provides a suite of tools and services for building and managing applications. It offers features such as real-time database, authentication, hosting, cloud storage, messaging, and analytics. With Firebase, developers can easily build, deploy and scale their applications without the need for managing servers or infrastructure. It is a popular choice for building web and mobile applications due to its ease of use, real-time data synchronization, and robust set of features. Firebase is owned by Google and can be integrated with other Google services to create powerful, feature-rich applications.
