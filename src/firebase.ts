@@ -2,13 +2,20 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKPyzEu0KinBGDvIduxZbYnnnJj4rAl-4",
-  authDomain: "polaganje-quiz.firebaseapp.com",
-  projectId: "polaganje-quiz",
-  storageBucket: "polaganje-quiz.appspot.com",
-  messagingSenderId: "120126101593",
-  appId: "1:120126101593:web:f5cc5e8486fc9534be3948",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+
+// apiKey: process.env.REACT_APP_API_KEY,
+// authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+// projectId: process.env.REACT_APP_PROJECT_ID,
+// storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+// messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+// appId: process.env.REACT_APP_APP_ID,
